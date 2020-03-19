@@ -1,0 +1,38 @@
+1.automatic : 
+		*turn on at empty
+		*turn off at full
+		*at 8:00,1:00,5:00 tank must be full
+2.manual : 
+		turn on and off manually 
+		alarm at tank full and empty
+
+app : 
+		automatic and manual switches
+ 		on and off switches
+		display of water level percentage
+		display level vs time graph for spike detection
+		get alarm or notifications on tank full,empty,leakage detection
+
+constraints :	
+		internet connectivity problems(sender and receiver)
+		leakage problems(spike)
+
+ultrasonic sensor -> nodemcu --> cloud --> arduino --> motor
+					       .
+					      /|\
+					       |
+					      \|/
+					       '
+					      app
+
+ultrasonic --> arduino -->rf transreceiver -->nodemcu <--> rf transreceiver -->arduino --> motor
+					      .
+					     /|\
+					      |
+					     \|/
+					      '
+					    cloud  <--> app
+channel id : 863955
+API : 1MDSUFCOV25NTRAT
+https://api.thingspeak.com/channels/YOUR CHANNEL ID HERE/feeds/last.json?api_key=
+https://api.thingspeak.com/update?api_key=
