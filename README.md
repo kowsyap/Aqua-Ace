@@ -19,3 +19,5 @@ It also has an app which works on internet it sends intructions to the system an
 App is developed using MIT app inventer
 
 The following code blocks of the developed app is given in block 1 , block 2 images
+
+Team: Ajay, Kowsyap Pranay
